@@ -7,7 +7,7 @@ HTML, CSS and JavaScript.
 
 | # | Project | Technologies | Live Demo |
 |---|---------|--------------|-----------|
-| 01 | Product Search App | HTML, CSS, JavaScript, API | [Live Demo](./01-product-search-app/) |
+| 01 | Product Search App | HTML, CSS, JavaScript, API | [Live Demo](https://salaihhasan.github.io/javascript-projects/product-search-app) |
 
 ## About
 
