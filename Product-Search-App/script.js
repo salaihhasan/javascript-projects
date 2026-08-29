@@ -33,6 +33,4 @@ document.getElementById("input").oninput = function (){
    showAll(newResult);
 }
 
-
-
 renderProduct();
