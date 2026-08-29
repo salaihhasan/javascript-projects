@@ -48,3 +48,4 @@ The projects focus on practicing:
 ---
 
 More projects will be added as I continue learning and building with JavaScript.
+
