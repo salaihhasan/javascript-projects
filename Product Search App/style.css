@@ -1,0 +1,145 @@
+       * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            max-width: 100%;
+            margin: 0;
+        }       
+       
+       body{
+            background-color: oldlace;
+            padding: 0px 15px;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #products{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: 20px;
+            width: 100%;
+
+        }
+
+        #input{
+            margin: 1.5rem 2rem;
+            width: 25rem;
+            height: 2.5rem;
+        }
+
+        #btn{
+            padding: 10px 20px;
+            font-size: 1.3rem;
+            background-color: red;
+            color: rgb(251, 241, 241);
+            border-radius: 6px;
+        }
+
+        .card{
+            border: 0.5px solid black;
+            padding: 1rem;
+            border-radius: 10px ;
+            background-color: white;
+        }
+
+        .card img{
+            width : 48%;
+            margin-left : 25%;
+        }
+        .card .title{
+            margin-left : 19px;
+        }
+        .card .price{
+           font-size :1.2rem;
+           margin : 0px;
+        }
+
+        @media screen and (max-width: 480px){
+            #products{
+                /* display: grid; */
+                width: 100%;
+                max-width: 100%;
+                grid-template-columns: repeat(2, minmax(0,1fr)) ;
+            }
+
+            .card{
+                min-width: 0;
+                overflow-wrap: break-word;
+            }
+
+            #input{
+                margin: 0.8rem 1.3rem;
+                width: 14rem;
+                height: 1.9rem;
+            }
+            header h1{
+                font-size: 1.3rem;
+            }
+           header .icon{
+                display: none;
+           }
+
+           header #btn{
+                display: none;
+           }
+
+            
+        }
+
+        @media (width >= 481px) and (width <= 767px){
+            #products{
+                grid-template-columns: 1fr 1fr 1fr ;
+            }
+
+            #input{
+                margin: 0.8rem 1.3rem;
+                width: 18rem;
+                height: 2rem;
+            }
+            header{
+                align-items: center;
+                margin-bottom: 20px;
+            }
+            header h1{
+                font-size: 1.5rem;
+            }
+           header .icon{
+                display: none;
+           }
+
+           header #btn{
+                display: none;
+           }
+        }
+
+        @media (width >= 768px) and (width <= 1024px) {
+            #products{
+                grid-template-columns: 1fr 1fr 1fr 1fr ;
+            }
+
+            #input{
+                margin: 0.8rem 1.3rem;
+                width: 18rem;
+                height: 2rem;
+            }
+            header{
+                align-items: center;
+                margin-bottom: 20px;
+            }
+            header h1{
+                font-size: 1.5rem;
+            }
+           header .icon{
+                display: none;
+           }
+
+           header #btn{
+                display: none;
+           }
+        }
+
+        
