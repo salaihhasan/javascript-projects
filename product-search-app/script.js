@@ -15,9 +15,12 @@ function showAll(items){
        let card =  document.createElement("div");
        card.className = "card";
       card.innerHTML = `
-         <img src = "${arr.thumbnail}">
-         <div class = "title"><h3>${arr.title}<h3><div>
-         <div class = "price">Price : ${arr.price}<div>
+         <div class= "img-div"><img src = "${arr.thumbnail}"></div>
+         <div class = "title"><h3>${arr.title}<h3></div>
+         <div class = "price-div">
+            <span class = "price">$${arr.price}</span>
+            <span class="bi bi-cart"></span>
+         </div>
       `
       products.appendChild(card);
 

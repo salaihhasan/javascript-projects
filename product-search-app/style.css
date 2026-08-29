@@ -1,5 +1,6 @@
        * {
             box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         html, body {
@@ -17,6 +18,28 @@
             justify-content: space-between;
             align-items: center;
         }
+        .logo{
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-name{
+            margin-left: 10px;
+        }
+        .logo-name p{
+            color: gray;
+            margin-top: -15px;
+        }
+        .logo-name h1{
+            font-size: 30px;
+          
+        }
+
+        .logo span{
+            font-size: 3.5rem;
+            color: purple;
+        }
+
         #products{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -34,28 +57,54 @@
         #btn{
             padding: 10px 20px;
             font-size: 1.3rem;
-            background-color: red;
+            background-color: violet;
             color: rgb(251, 241, 241);
             border-radius: 6px;
+            border: none;
+        }
+
+        .icon{
+            font-size: 30px ;
         }
 
         .card{
-            border: 0.5px solid black;
+            /* border: 0.5px solid black; */
             padding: 1rem;
             border-radius: 10px ;
             background-color: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+            border: 1px solid blue;
+            cursor: pointer;
         }
 
         .card img{
-            width : 48%;
+            width : 55%;
             margin-left : 25%;
         }
+
         .card .title{
-            margin-left : 19px;
+            /* margin-left : 19px; */
+            /* border: 1px solid black; */
+            height: 70px;
+            font-size: 0.8rem;
         }
         .card .price{
            font-size :1.2rem;
            margin : 0px;
+        }
+
+        .card .price-div{
+            display: flex;
+            justify-content: space-between;
+            color: purple;
+            margin-top: -10px;
+            font-weight: bolder;
+
         }
 
         @media screen and (max-width: 480px){
